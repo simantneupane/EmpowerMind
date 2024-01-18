@@ -13,6 +13,7 @@ body{
 nav{
     height: 80px;
     width: 100%;
+    border: none;
 }
 nav .logo{
     font-size: 2.7rem;
