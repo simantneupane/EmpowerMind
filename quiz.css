@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: blue;
+}
+nav .logo{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: rgb(119, 194, 245);
+    padding: 30px;
+    line-height: 80px;
+}
+span{
+    color: rgb(255, 145, 0);
+}
+nav ul{
+    float: right;
+    margin-right: 60px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    line-height: 90px;
+}
+nav a{
+    color: rgba(41, 39, 39, 0.877);
+    font-size: 1.5rem;
+    text-decoration: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    color: rgb(0, 153, 255);
+    transition: .3s;
+}
+/* Add styles for the hidden quiz options */
+.quiz-options {
+    display: none;
+    position: absolute; /* Position below the "Quizes" option */
+    border-top: 2px solid;
+    left: 0;
+    margin-top: -30px;
+    width: 100%; /* Full width of the parent container */
+    background-color: rgba(255, 255, 255, 0.363);
+    backdrop-filter: blur(10px);    
+    z-index: 1000; /* Ensure it appears on top of other elements */
+}
+
+
+/* Adjust the styles for the visible content within the navigation option */
+.about-option:hover a {
+    text-decoration: underline;
+}
+
+/* Display the hidden quiz options when hovering over the "Quizes" option */
+.about-option:hover .quiz-options {
+    display: block;
+}
+.quiz-options p{
+    width: 300px;
+    margin-left: 200px;
+    border-bottom: 2px solid;
+}
+
+.quiz-options a{
+    margin-left: 200px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+
+ 
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.quiz-container {
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+    padding-top: 40px;
+    display: none;
+}
+
+.quiz-container.active {
+    display: block;
+}
+p{
+    margin-top: 10px;
+}
+button {
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.submit_btn{
+    background-color: #4caf50;
+    width: 90px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.submit_btn:hover{
+    background-color: #45a049;
+}
+
+input{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+h3{
+    margin-bottom: 10px;
+}
+
+.sidemenu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.363);
+    backdrop-filter: blur(10px);    
+    box-shadow: rgb(56, 52, 52);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidemenu li{
+    width: 100%; 
+
+}
+.sidemenu a{
+    width: 100%;
+}
+
+.menu-btn{
+    display: none;
+}
+.quiz-container h4{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+.quiz-container .p2{
+    margin-left: 10px;
+}
+footer{
+    width: 100%;
+    height: 30vh;
+    margin-top: 30%;
+    background-color: rgba(245, 182, 8, 0.11); 
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+footer .left_footer{
+    max-width: 600px;
+}
+footer .logo{
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: rgb(255, 177, 8);
+    padding: 30px;
+}
+footer .icons{
+    margin-top: 20px;
+    margin-right: 25px;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+footer p{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: white;
+}
+footer input{
+    border: none;
+    margin: 0;
+    opacity: 1;
+    padding: 0;
+}
+footer .email{
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer .submit{
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: 30px;
+    width: 100px;
+    height: 50px;
+    margin-right: 8px;
+    background-color: rgb(19, 224, 224);
+    font-size: 1.1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer .submit:hover{
+    background-color:  rgb(31, 175, 175);
+    cursor: pointer;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    nav .logo{
+        font-size: 2rem;
+        margin: 0;
+        padding: 10px;
+    }
+    .sidemenu{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    nav .logo{
+        font-size: 1.8rem;
+        margin: 10px;
+        padding: 0;
+    }
+    .hero-section {
+        width: 260px;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        padding: 0px 3px;
+    }
+    .hero-section .content h1{
+        font-size: 2.2rem;
+        line-height: 30px;
+        margin-top: 50px;
+    }
+    .hero-section .content p {
+        color: aliceblue;
+        font-size: .8rem;
+        font-weight: 300;
+        margin-top: 14px;   
+    }
+    .sidemenu{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .menu-btn{
+        padding: -9px;
+        margin: -9px;
+    }
+}

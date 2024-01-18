@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+body{
+    height: 100vh;
+    background-image: url(backgroundimg.jpg);
+    background-size: cover;
+}
+nav{
+    height: 80px;
+    width: 100%;
+}
+nav .logo{
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: rgb(9, 81, 175);
+    padding: 30px;
+    line-height: 180px;
+}
+span{
+    color: rgb(255, 145, 0);
+}
+nav ul{
+    float: right;
+    margin-right: 60px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 25px;
+    font-size: 1.5rem;
+    line-height: 100px;
+}
+nav a{
+    color: rgba(41, 39, 39, 0.877);
+    font-size: 1.5rem;
+    text-decoration: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+nav .sidemenu .additional-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #555;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+a.active,a:hover{
+    color: rgb(0, 153, 255);
+    transition: .3s;
+}
+/* Add styles for the hidden quiz options */
+.quiz-options {
+    display: none;
+    position: absolute; /* Position below the "Quizes" option */
+    border-top: 2px solid;
+    left: 0;
+    margin-top: -30px;
+    width: 100%; /* Full width of the parent container */
+    background-color: rgba(255, 255, 255, 0.363);
+    backdrop-filter: blur(10px);    
+    z-index: 1000; /* Ensure it appears on top of other elements */
+}
+
+
+/* Adjust the styles for the visible content within the navigation option */
+.about-option:hover a {
+    text-decoration: underline;
+}
+
+/* Display the hidden quiz options when hovering over the "Quizes" option */
+.about-option:hover .quiz-options {
+    display: block;
+}
+.quiz-options p{
+    width: 300px;
+    margin-left: 200px;
+    border-bottom: 2px solid;
+}
+
+.quiz-options a{
+    margin-left: 200px;
+}
+
+
+.hero-section {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.hero-section .content {
+    color: black;
+    max-width: 1200px;
+    width: 70%;
+    margin: 0 20px;
+}
+
+.hero-section .content h1 {
+    font-size: 3rem;
+    max-width: 600px;
+}
+
+.hero-section .content p {
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 14px;
+    max-width: 600px;
+    
+}
+
+.sidemenu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.363);
+    backdrop-filter: blur(10px);    
+    box-shadow: rgb(56, 52, 52);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidemenu li{
+    width: 100%; 
+
+}
+.sidemenu a{
+    width: 100%;
+}
+
+.menu-btn{
+    display: none;
+}
+.hero-section .typing-text {
+    width: 25%;
+    max-width: 500px;
+    font-size: 1.8rem;
+    color: yellow;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 8s steps(200) infinite;
+}
+footer{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.363); 
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+footer .left_footer{
+    max-width: 500px;
+}
+footer .logo{
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: rgb(255, 177, 8);
+    padding: 30px;
+}
+footer .icons{
+    margin-top: 20px;
+    margin-right: 25px;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+footer p{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: white;
+}
+footer input{
+    border: none;
+    margin: 0;
+    opacity: 0.5;
+    padding: 0;
+}
+footer .email{
+    
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer .submit{
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: 30px;
+    width: 100px;
+    height: 50px;
+    margin-right: 8px;
+    background-color: rgb(19, 224, 224);
+    font-size: 1.1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer .submit:hover{
+    background-color:  rgb(31, 175, 175);
+    cursor: pointer;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    
+    .sidemenu{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    nav .logo{
+        font-size: 2rem;
+        margin: 0;
+        padding: 10px;
+        line-height: 20px;
+    }
+    .hero-section {
+        width: 260px;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        padding: 0px 3px;
+    }
+    .hero-section .content h1{
+        font-size: 2.2rem;
+        line-height: 30px;
+        margin-top: 50px;
+    }
+    .hero-section .content p {
+        color: aliceblue;
+        font-size: .8rem;
+        font-weight: 300;
+        margin-top: 14px;   
+    }
+    .sidemenu{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .menu-btn{
+        padding: -9px;
+        margin: -9px;
+    }
+}
